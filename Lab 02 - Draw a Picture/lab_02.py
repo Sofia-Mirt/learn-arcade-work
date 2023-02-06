@@ -89,6 +89,58 @@ arcade.draw_circle_filled(225, 380, 30, (4, 41, 35))
 arcade.draw_circle_filled(250, 355, 30, (4, 41, 35))
 arcade.draw_circle_filled(280, 395, 30, (4, 41, 35))
 
+# Draw a tent.
+arcade.draw_triangle_filled(440, 470, 500, 500, 470, 600, (106, 48, 16))
+arcade.draw_polygon_filled(((440, 470),
+                            (470, 600),
+                            (350, 601),
+                            (310, 477)
+                            ),
+                           (78, 31, 5))
+arcade.draw_line(470, 600, 470, 485, (64, 32, 15), 2)
+
+# Draw a fire.
+arcade.draw_line(570, 510, 590, 480, (86, 37, 10), 5)
+arcade.draw_line(570, 510, 550, 480, (86, 37, 10), 5)
+arcade.draw_line(570, 510, 570, 475, (86, 37, 10), 5)
+arcade.draw_line(570, 510, 580, 477, (86, 37, 10), 5)
+arcade.draw_line(570, 510, 560, 477, (86, 37, 10), 5)
+arcade.draw_polygon_filled(((570, 500),
+                            (560, 510),
+                            (565, 525),
+                            (570, 530),
+                            (572, 525),
+                            (575, 538),
+                            (578, 530),
+                            (580, 520),
+                            (575, 540),
+                            (580, 505)
+                            ),
+                           arcade.csscolor.ORANGE)
+
+# Draw a light from the fire.
+arcade.draw_arc_filled(570, 500, 60, 80, (255, 188, 3, 30), 0, 180)
+arcade.draw_arc_filled(570, 500, 60, 40, (255, 188, 3, 20), 180, 360)
+arcade.draw_arc_filled(570, 500, 120, 140, (255, 188, 3, 20), 0, 180)
+arcade.draw_arc_filled(570, 500, 120, 80, (255, 188, 3, 15), 180, 360)
+arcade.draw_arc_filled(570, 500, 200, 220, (255, 188, 3, 15), 0, 180)
+arcade.draw_arc_filled(570, 500, 200, 150, (255, 188, 3, 10), 180, 360)
+arcade.draw_arc_filled(570, 500, 350, 370, (255, 188, 3, 10), 0, 180)
+arcade.draw_arc_filled(570, 500, 350, 280, (255, 188, 3, 10), 180, 360)
+
+# Draw the moon.
+arcade.draw_circle_filled(150, 950, 30, arcade.csscolor.SEASHELL)
+arcade.draw_circle_filled(170, 950, 25, (4, 15, 4))
+
+# Draw stars.
+arcade.draw_circle_filled(850, 980, 2, arcade.csscolor.SEASHELL)
+arcade.draw_circle_filled(963, 648, 2, arcade.csscolor.SEASHELL)
+arcade.draw_circle_filled(60, 860, 2, arcade.csscolor.SEASHELL)
+arcade.draw_circle_filled(30, 530, 2, arcade.csscolor.SEASHELL)
+arcade.draw_circle_filled(450, 930, 2, arcade.csscolor.SEASHELL)
+arcade.draw_circle_filled(856, 526, 2, arcade.csscolor.SEASHELL)
+arcade.draw_circle_filled(496, 759, 2, arcade.csscolor.SEASHELL)
+arcade.draw_circle_filled(753, 736, 2, arcade.csscolor.SEASHELL)
 
 
 arcade.finish_render()
